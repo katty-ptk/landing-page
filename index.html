@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   
   <title>Landing page</title>
@@ -12,9 +14,45 @@
 </head>
 <body>
 
-  <header>
-    
-  </header>
+  <section id="header">
+    <div id="nav-bar">
+      <img id="logo" src="images/logo.png" alt="logo">
 
+      <nav>
+        <div id="product">
+          <a href="#">Product</a>
+          <img src="images/icon-arrow-light.png" alt="">
+        </div>
+  
+        <div id="company">
+          <a href="#">Company</a>
+          <img src="images/icon-arrow-light.png" alt="">
+        </div>
+  
+        <div id="connect">
+          <a href="#">Connect</a>
+          <img src="images/icon-arrow-light.png" alt="">
+        </div>
+      </nav>  
+    </div>
+
+    <div id="sign-in">
+      <button id="login">Login</button>
+      <button id="sign-up">Sing Up</button>
+    </div>
+
+    <div id="heading">
+      <h1>A modern publishing platform</h1>
+      <p>Grow your audience and build your online brand</p>
+
+      <div>
+        <button id="start">Start for Free</button>
+        <button id="learn-more">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="javascript/app.js"></script>
 </body>
 </html>

@@ -1,8 +1,128 @@
+:root {
+    --header-gradient-1: hsl(13, 100%, 72%);
+    --header-gradient-2: hsl(353, 100%, 62%);
+    --lt-red: hsl(356, 100%, 66%);
+    --xlt-red: hsl(355, 100%, 74%);
+    --xdk-blue: hsl(208, 49%, 24%);
+    --white: hsl(0, 0%, 100%);
+    --xdk-grayblue: hsl(207, 13%, 34%);
+    --xdk-blackblue: hsl(240, 10%, 16%);
+    --xdk-grayblue: hsl(237, 17%, 21%);
+    --xdk-desatblue: hsl(237, 23%, 32%);
+    --footer:  hsl(240, 2%, 79%);
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    /* background-image: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%)); */
+    font-family: 'Overpass', sans-serif;
+    background: var(--white);
+}
+
+#header {
+    height: 350px;
+    background: url('../images/bg-pattern-intro.png'), linear-gradient(var(--header-gradient-1), var(--header-gradient-2));
+    background-position: center;    
+    
+    padding: 30px 100px;
+    border-bottom-left-radius: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#header img {
+    height: 15%;
+    margin-right: 50px;
+}
+
+#header #nav-bar {
+    width: 50%;
+    display: flex;
+}
+
+#header #nav-bar nav {
+    position: relative;
+    top: 10px;
+    display: flex;
+}
+
+#header #nav-bar nav a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#header #nav-bar nav img {
+    height: 10px;
+}
+
+#header #sign-in button {
+    background: transparent;
+    border: none;
+    height: 40px;
+    width: 120px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#header #sign-in #login {
+    color: var(--white);
+}
+
+#header #sign-in #sign-up {
+    color: var(--lt-red);
+    background: var(--white);
+    border-radius: 100px;
+}
+
+#header #heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    color: var(--white);
+    font-weight: bold;
+    height: 150px;
+}
+
+#header #heading h1 {
+    font-size: 3em;
+}
+
+#header #heading p {
+    font-size: 1em;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+#header #heading div button {
+    width: 120px;
+    height: 40px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    background: transparent;
+    border: 1px solid var(--white);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#header #heading div #start {
+    color: var(--lt-red);
+    background: var(--white);
+    margin-right: 15px;
+}
+
+#header #heading div #learn-more {
+    color: var(--white);
 }
