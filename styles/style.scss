@@ -1,0 +1,18 @@
+@import './variables';
+@import './header';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Overpass', sans-serif;
+	background: $white;
+}
+
+
+.designed-f-f {
+	color: $xdk-blue;
+	padding-top: 50px;
+}
