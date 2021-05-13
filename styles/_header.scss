@@ -1,0 +1,152 @@
+// HEADER
+#header {
+	height: 300px;
+	background: url('../images/bg-pattern-intro.png'), linear-gradient($header-gradient-1, $header-gradient-2);
+	background-position: center;
+	padding: 30px 100px;
+	border-bottom-left-radius: 100px;
+	display: flex;
+	justify-content: space-between;
+
+	img {
+		height: 45px;
+		// margin-right: 20px;
+	}
+
+	#nav-bar {
+		width: 50%;
+		height: 15%;
+		display: flex;
+
+		.nav-div {
+			display: flex;
+			position: relative;
+			top: 10px;
+			height: 20px;
+			margin-left: 20px;	
+
+			div {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				button {
+					text-decoration: none;
+					font-weight: bold;
+					font-size: 1em;
+					color: $white;
+					border: none;
+					background: transparent;
+					cursor: pointer;
+				}
+		
+				img {
+					height: 10px;
+					cursor: pointer;
+					margin-left: 3px;
+				}	
+	
+				.border-bottom {
+					padding-bottom: 3.5px;
+					border-bottom: 3px solid $white;
+				}
+
+				&:nth-child(2), &:last-child {
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+	
+
+	#sign-in {
+		button {
+			background: transparent;
+			border: none;
+			height: 40px;
+			width: 120px;
+			font-family: 'Overpass', sans-serif;
+			font-size: 1em;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		#login {
+			color: $white;
+		}
+
+		#sign-up {
+			color: $lt-red;
+			background: $white;
+			border-radius: 100px;
+			transition: all .5s ease-in-out;
+
+			&:hover {
+				background: rgba($white, 0.4);
+				color: $white;
+			}
+		}
+	}
+
+	#heading {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		justify-content: space-around;
+		position: absolute;
+		left: 50%;
+		top: 15%;
+		transform: translateX(-50%);
+		color: $white;
+		font-weight: bold;
+		height: 150px;
+
+		h1 {
+			font-size: 3em;
+		}
+
+		p {
+			font-size: 1em;
+			padding-top: 15px;
+			padding-bottom: 25px;
+		}
+
+		div {
+			button {
+				width: 120px;
+				height: 40px;
+				font-family: 'Overpass', sans-serif;
+				font-size: 1em;
+				font-weight: bolder;
+				background: transparent;
+				border-radius: 100px;
+				cursor: pointer;
+			}
+
+			#start {
+				color: $lt-red;
+				background: $white;
+				margin-right: 15px;
+				border: none;
+				transition: all .5s ease-in-out;
+
+				&:hover {
+					background: rgba($white, 0.4);
+					color: $white;
+				}
+			}
+
+			#learn-more {
+				color: $white;
+				border: 1px solid $white;
+				transition: all .5s ease-in-out;
+
+				&:hover {
+					background: $white;
+					color: $xlt-red;
+				}
+			}
+		}
+	}
+}
