@@ -1,5 +1,6 @@
 @import './variables';
 @import './header';
+@import './design-section';
 
 * {
 	margin: 0;
@@ -9,10 +10,5 @@
 body {
 	font-family: 'Overpass', sans-serif;
 	background: $white;
-}
-
-
-.designed-f-f {
-	color: $xdk-blue;
-	padding-top: 50px;
+	overflow-x: hidden;
 }

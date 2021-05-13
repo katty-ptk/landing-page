@@ -1,0 +1,51 @@
+.design {
+    position: relative;
+    color: $xdk-blue;
+    padding-left: 200px;
+    height: 50vh;
+
+    h2 {
+        position: absolute;
+        margin-top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.7em;
+    }
+
+    .design-content {
+        display: flex;
+        // justify-content: space-between;
+
+        .info-wrapper {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+            height: 100%;
+            margin-top: 100px;
+    
+            h3 {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+    
+            p {
+                line-height: 1.5em;
+            }
+    
+            .design-info-2 {
+                margin-top: 50px;
+            }    
+        }
+
+        .ilustration {
+            position: absolute;
+            right: -15%;
+            
+            img {
+                height: 700px;
+            }
+        }
+    }
+}
