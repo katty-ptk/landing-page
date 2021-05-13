@@ -161,7 +161,7 @@
 
 #header #heading div #learn-more {
   color: white;
-  border: 1px solid white;
+  border: 3px solid white;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
@@ -169,6 +169,67 @@
 #header #heading div #learn-more:hover {
   background: white;
   color: #ff7a85;
+}
+
+.design {
+  position: relative;
+  color: #1f3f5b;
+  padding-left: 200px;
+  height: 50vh;
+}
+
+.design h2 {
+  position: absolute;
+  margin-top: 80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 1.7em;
+}
+
+.design .design-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.design .design-content .info-wrapper {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.design .design-content .info-wrapper h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.design .design-content .info-wrapper p {
+  line-height: 1.5em;
+}
+
+.design .design-content .info-wrapper .design-info-2 {
+  margin-top: 50px;
+}
+
+.design .design-content .ilustration {
+  position: absolute;
+  right: -15%;
+}
+
+.design .design-content .ilustration img {
+  height: 700px;
 }
 
 * {
@@ -179,10 +240,6 @@
 body {
   font-family: 'Overpass', sans-serif;
   background: white;
-}
-
-.designed-f-f {
-  color: #1f3f5b;
-  padding-top: 50px;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */
