@@ -211,25 +211,54 @@
 }
 
 .design .design-content .info-wrapper h3 {
-  font-size: 1.5em;
+  font-size: 1.5;
   margin-bottom: 10px;
 }
 
 .design .design-content .info-wrapper p {
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 .design .design-content .info-wrapper .design-info-2 {
   margin-top: 50px;
 }
 
-.design .design-content .ilustration {
+.design .design-content .design-ilustration {
   position: absolute;
   right: -15%;
 }
 
-.design .design-content .ilustration img {
+.design .design-content .design-ilustration img {
   height: 700px;
+}
+
+.art-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #25252d;
+  margin-top: 150px;
+  height: 40vh;
+}
+
+.art-section .art-info {
+  color: white;
+  width: 40%;
+  margin-right: 100px;
+}
+
+.art-section .art-info h3 {
+  font-size: 2em;
+}
+
+.art-section .art-info p {
+  line-height: 1.5;
+  font-size: 1.05em;
 }
 
 * {

@@ -26,12 +26,12 @@
             margin-top: 100px;
     
             h3 {
-                font-size: 1.5em;
+                font-size: 1.5;
                 margin-bottom: 10px;
             }
     
             p {
-                line-height: 1.5em;
+                line-height: 1.5;
             }
     
             .design-info-2 {
@@ -39,10 +39,9 @@
             }    
         }
 
-        .ilustration {
+        .design-ilustration {
             position: absolute;
             right: -15%;
-            
             img {
                 height: 700px;
             }

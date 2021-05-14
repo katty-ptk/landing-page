@@ -1,0 +1,23 @@
+.art-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: $xdk-blackblue;
+    margin-top: 150px;
+    height: 40vh;
+
+    .art-info {
+        color: $white;
+        width: 40%;
+        margin-right: 100px;
+
+        h3 {
+            font-size: 2em;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 1.05em;
+        }
+    }
+}
