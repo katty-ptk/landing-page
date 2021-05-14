@@ -47,6 +47,10 @@
           justify-content: center;
 }
 
+#header #nav-bar .nav-div div:nth-child(2), #header #nav-bar .nav-div div:last-child {
+  margin-left: 20px;
+}
+
 #header #nav-bar .nav-div div button {
   text-decoration: none;
   font-weight: bold;
@@ -66,10 +70,6 @@
 #header #nav-bar .nav-div div .border-bottom {
   padding-bottom: 3.5px;
   border-bottom: 3px solid white;
-}
-
-#header #nav-bar .nav-div div:nth-child(2), #header #nav-bar .nav-div div:last-child {
-  margin-left: 15px;
 }
 
 #header #sign-in button {
@@ -254,10 +254,11 @@
 
 .art-section .art-info h3 {
   font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .art-section .art-info p {
-  line-height: 1.5;
+  line-height: 1.7;
   font-size: 1.05em;
 }
 
@@ -317,10 +318,11 @@ footer {
   color: #c8c8cb;
   height: 30vh;
   border-top-right-radius: 100px;
+  padding-bottom: 30px;
 }
 
 footer .footer-logo {
-  margin: 50px 100px;
+  margin: 70px 100px;
   cursor: pointer;
 }
 
@@ -329,9 +331,10 @@ footer .footer-wrapper {
   display: -ms-flexbox;
   display: flex;
   margin-left: 200px;
-  margin-top: 80px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 80px;
+  text-align: center;
 }
 
 footer .footer-wrapper div:not(:last-child) {
@@ -347,7 +350,17 @@ footer .footer-wrapper div p {
 footer .footer-wrapper div li {
   font-size: 1em;
   line-height: 1.7;
+  margin-bottom: 8px;
   cursor: pointer;
+  position: relative;
+  list-style-position: inside;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+footer .footer-wrapper div li .border-bottom {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #c8c8cb;
 }
 
 * {
@@ -363,5 +376,9 @@ body {
 
 body li {
   list-style-type: none;
+}
+
+.border-bottom {
+  border-bottom: 2px solid white;
 }
 /*# sourceMappingURL=style.css.map */

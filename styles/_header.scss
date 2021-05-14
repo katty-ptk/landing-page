@@ -30,6 +30,10 @@
 				align-items: center;
 				justify-content: center;
 
+				&:nth-child(2), &:last-child {
+					margin-left: 20px;
+				}
+
 				button {
 					text-decoration: none;
 					font-weight: bold;
@@ -49,10 +53,6 @@
 				.border-bottom {
 					padding-bottom: 3.5px;
 					border-bottom: 3px solid $white;
-				}
-
-				&:nth-child(2), &:last-child {
-					margin-left: 15px;
 				}
 			}
 		}
