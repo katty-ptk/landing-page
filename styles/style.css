@@ -15,6 +15,7 @@
 
 #header img {
   height: 45px;
+  cursor: pointer;
 }
 
 #header #nav-bar {
@@ -70,6 +71,43 @@
 #header #nav-bar .nav-div div .border-bottom {
   padding-bottom: 3.5px;
   border-bottom: 3px solid white;
+}
+
+#header #nav-bar .nav-div #connect {
+  display: block;
+  position: relative;
+}
+
+#header #nav-bar .nav-div #connect img {
+  position: absolute;
+  top: 5px;
+  margin-left: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+#header #nav-bar .nav-div #connect .see-more {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin-left: -30px;
+  margin-top: 10px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+#header #nav-bar .nav-div #connect .see-more li {
+  cursor: pointer;
+}
+
+#header #nav-bar .nav-div #connect .see-more li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+#header #nav-bar .nav-div #connect .see-more li:hover {
+  font-weight: bold;
 }
 
 #header #sign-in button {
@@ -318,7 +356,7 @@ footer {
   color: #c8c8cb;
   height: 30vh;
   border-top-right-radius: 100px;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
 }
 
 footer .footer-logo {
@@ -378,7 +416,11 @@ body li {
   list-style-type: none;
 }
 
-.border-bottom {
-  border-bottom: 2px solid white;
+.not-visible {
+  visibility: hidden;
+}
+
+.visible-cnt {
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */
