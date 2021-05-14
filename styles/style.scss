@@ -3,6 +3,7 @@
 @import './design-section';
 @import './art-section';
 @import './features';
+@import './footer';
 
 * {
 	margin: 0;
@@ -12,5 +13,10 @@
 body {
 	font-family: 'Overpass', sans-serif;
 	background: $white;
+	// left: 0;
 	overflow-x: hidden;
+
+	li {
+		list-style-type: none;
+	}
 }
