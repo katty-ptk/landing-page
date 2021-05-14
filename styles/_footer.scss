@@ -4,7 +4,7 @@ footer {
     color: $footer-color;
     height: 30vh;
     border-top-right-radius: 100px;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 
     .footer-logo {
         margin: 70px 100px;
@@ -39,7 +39,7 @@ footer {
                 list-style-position: inside;  // to add the border on mouseenter
                 transition: all 1s ease-in-out;
 
-                .border-bottom {
+                .border-bottom {   // on mouseenter
                     padding-bottom: 2px;
                     border-bottom: 1px solid $footer-color;
                 }

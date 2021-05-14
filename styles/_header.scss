@@ -10,7 +10,7 @@
 
 	img {
 		height: 45px;
-		// margin-right: 20px;
+		cursor: pointer;
 	}
 
 	#nav-bar {
@@ -53,6 +53,41 @@
 				.border-bottom {
 					padding-bottom: 3.5px;
 					border-bottom: 3px solid $white;
+				}
+			}
+
+			#connect {
+				display: block; // takes the "more" below the button
+				position: relative;
+
+				img {
+					position: absolute;
+					top: 5px;
+					margin-left: 5px;
+					transition: all .5s ease-in-out; // for when the menu is open
+				}
+
+				.see-more {
+					position: absolute;
+					width: 150px;
+					height: 150px;
+					margin-left: -30px;
+					margin-top: 10px;
+					background: $white;
+					border-radius: 10px;
+					text-align: center;
+					z-index: 1;
+					li {
+						cursor: pointer;
+
+						&:not(:last-child) {
+							margin-bottom: 10px;
+						}
+
+						&:hover {
+							font-weight: bold;
+						}
+					}
 				}
 			}
 		}
