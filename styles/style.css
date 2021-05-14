@@ -32,7 +32,7 @@
   position: relative;
   top: 10px;
   height: 20px;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 #header #nav-bar .nav-div div {
@@ -211,7 +211,7 @@
 }
 
 .design .design-content .info-wrapper h3 {
-  font-size: 1.5;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
@@ -259,6 +259,54 @@
 .art-section .art-info p {
   line-height: 1.5;
   font-size: 1.05em;
+}
+
+.features-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  margin-top: 100px;
+}
+
+.features-section .features-ilustration {
+  width: 150vw;
+}
+
+.features-section .features-ilustration img {
+  width: 100%;
+}
+
+.features-section .features-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 150vw;
+  padding: 0px 150px;
+}
+
+.features-section .features-wrapper div:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.features-section .features-wrapper div h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.features-section .features-wrapper div p {
+  line-height: 1.5;
+  font-size: 1em;
 }
 
 * {

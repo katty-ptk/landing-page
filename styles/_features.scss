@@ -1,0 +1,38 @@
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    margin-top: 100px;
+
+    .features-ilustration {
+        width: 150vw;
+        img {
+            width: 100%;
+        }
+    }
+
+    .features-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 150vw;
+        padding: 0px 150px;
+
+        div {
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+
+            h3 {
+                font-size: 1.5em;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+
+            p {
+                line-height: 1.5;
+                font-size: 1em;
+            }
+        }
+    }
+}
